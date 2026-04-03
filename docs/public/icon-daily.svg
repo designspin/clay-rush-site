@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Calendar -->
+  <rect x="28" y="28" width="72" height="64" rx="6" fill="#ffffff" opacity="0.9"/>
+  <rect x="28" y="28" width="72" height="18" rx="6" fill="#cc2222"/>
+  <rect x="28" y="40" width="72" height="6" fill="#cc2222"/>
+  <!-- Checkmark -->
+  <polyline points="48,68 58,78 80,54" fill="none" stroke="#2a8a2a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

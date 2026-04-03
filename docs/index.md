@@ -80,17 +80,17 @@ layout: page
 
 <div class="features-section">
   <div class="feature-card">
-    <img src="/icon-reticle.png" class="feature-icon" alt="">
+    <img src="/icon-reticle.svg" class="feature-icon" alt="">
     <h3>Precision Shooting</h3>
     <p>Hit clay targets with perfect timing. Build combos for bonus gold clays and unlock the elusive bonus duck.</p>
   </div>
   <div class="feature-card">
-    <img src="/icon-trophy.png" class="feature-icon" alt="">
+    <img src="/icon-trophy.svg" class="feature-icon" alt="">
     <h3>Game Center</h3>
     <p>Compete on leaderboards and unlock 18 achievements across skill, progression, score, and daily challenges.</p>
   </div>
   <div class="feature-card">
-    <img src="/icon-daily.png" class="feature-icon" alt="">
+    <img src="/icon-daily.svg" class="feature-icon" alt="">
     <h3>Daily Challenges</h3>
     <p>A new challenge every day. Build your streak and prove your dedication.</p>
   </div>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Trophy -->
+  <path d="M46,30 L46,20 L82,20 L82,30" fill="none" stroke="#ffd700" stroke-width="3"/>
+  <rect x="46" y="30" width="36" height="40" rx="0" ry="18" fill="#ffd700"/>
+  <rect x="34" y="30" width="14" height="22" rx="7" fill="#ffd700" opacity="0.7"/>
+  <rect x="80" y="30" width="14" height="22" rx="7" fill="#ffd700" opacity="0.7"/>
+  <!-- Base -->
+  <rect x="54" y="70" width="20" height="12" fill="#daa520"/>
+  <rect x="46" y="82" width="36" height="8" rx="3" fill="#daa520"/>
+  <!-- Star -->
+  <polygon points="64,34 68,46 80,46 70,53 74,65 64,58 54,65 58,53 48,46 60,46" fill="#fff8dc"/>
+</svg>

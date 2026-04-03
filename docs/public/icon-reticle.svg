@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Reticle -->
+  <g transform="translate(64, 56)" stroke="#cc2222" stroke-width="6" stroke-linecap="square" fill="none">
+    <polyline points="-32,-14 -32,-32 -14,-32"/>
+    <polyline points="32,-14 32,-32 14,-32"/>
+    <polyline points="-32,14 -32,32 -14,32"/>
+    <polyline points="32,14 32,32 14,32"/>
+  </g>
+  <!-- Star -->
+  <polygon points="64,42 70,58 88,58 74,68 78,84 64,74 50,84 54,68 40,58 58,58" fill="#ffd700"/>
+</svg>
