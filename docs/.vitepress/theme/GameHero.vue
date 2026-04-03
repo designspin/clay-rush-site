@@ -251,27 +251,30 @@
 
 h1 {
   font-family: 'Avenir Next', 'AvenirNext-Heavy', 'Montserrat', sans-serif;
-  font-size: 2.8rem;
   font-weight: 900;
-  line-height: 0.85;
   margin: 0 0 10px 0;
+  line-height: 1;
 }
 
 .clay-text {
+  display: block;
+  font-size: 3.5rem;
   color: #ffeb73;
-  letter-spacing: 5px;
-  -webkit-text-stroke: 3px #592e0d;
+  letter-spacing: 6px;
+  -webkit-text-stroke: 5px #592e0d;
   paint-order: stroke fill;
-  text-shadow: 3px 3px 0 rgba(0,0,0,0.5);
+  text-shadow: 4px -4px 0 rgba(0,0,0,0.5);
+  margin-bottom: 12px;
 }
 
 .rush-text {
+  display: block;
+  font-size: 3.5rem;
   color: #de732b;
-  letter-spacing: 7px;
-  font-size: 3.2rem;
-  -webkit-text-stroke: 3px #4d260d;
+  letter-spacing: 6px;
+  -webkit-text-stroke: 6px #4d260d;
   paint-order: stroke fill;
-  text-shadow: 3px 3px 0 rgba(0,0,0,0.5);
+  text-shadow: 4px -4px 0 rgba(0,0,0,0.5);
 }
 
 .tagline {
@@ -292,9 +295,8 @@ h1 {
 
 @media (max-width: 640px) {
   .game-hero { height: 460px; }
-  h1 { font-size: 2rem; }
-  .rush-text { font-size: 2.4rem; -webkit-text-stroke: 2px #4d260d; }
-  .clay-text { -webkit-text-stroke: 2px #592e0d; }
+  .clay-text { font-size: 2.4rem; -webkit-text-stroke: 4px #592e0d; }
+  .rush-text { font-size: 2.4rem; -webkit-text-stroke: 4px #4d260d; }
   .app-icon { width: 70px; height: 70px; }
   .shooter { height: 75px; }
   .clay-disc { display: none; }
