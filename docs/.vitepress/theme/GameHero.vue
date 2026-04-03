@@ -252,7 +252,7 @@
 h1 {
   font-family: 'Avenir Next', 'AvenirNext-Heavy', 'Montserrat', sans-serif;
   font-weight: 900;
-  margin: 0 0 10px 0;
+  margin: 20px 0 10px 0;
   line-height: 1;
 }
 
