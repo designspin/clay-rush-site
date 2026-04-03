@@ -145,7 +145,7 @@
 /* Hills - tiled across full width, sitting at horizon with green tint */
 .hills-strip {
   position: absolute;
-  bottom: 22%;
+  bottom: calc(22% - 30px);
   left: 0;
   width: 100%;
   height: 140px;
