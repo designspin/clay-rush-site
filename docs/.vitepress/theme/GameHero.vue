@@ -279,9 +279,11 @@ h1 {
 
 .tagline {
   font-size: 1rem;
-  color: rgba(255,255,255,0.92);
+  color: #fff;
   margin-bottom: 16px;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+  background: rgba(0,0,0,0.35);
+  padding: 6px 16px;
+  border-radius: 20px;
 }
 
 .store-badge img {
