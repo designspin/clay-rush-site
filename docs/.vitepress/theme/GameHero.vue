@@ -2,47 +2,41 @@
   <div class="game-hero">
     <!-- Sky -->
     <div class="sky">
+      <div class="cloud-band"></div>
       <div class="sun-glow"></div>
       <div class="sun"></div>
       <div class="cloud cloud-1"></div>
       <div class="cloud cloud-2"></div>
-      <div class="cloud cloud-3"></div>
     </div>
 
-    <!-- Landscape layers -->
-    <div class="landscape">
-      <!-- Back hills -->
-      <div class="hills-row back-hills">
-        <img src="/grassy-hills.png" alt="">
-        <img src="/grassy-hills.png" alt="">
-        <img src="/grassy-hills.png" alt="">
-      </div>
+    <!-- Ground (below horizon) -->
+    <div class="ground"></div>
 
-      <!-- Back trees -->
-      <img src="/tree-2.png" class="tree" style="left: 8%; bottom: 120px; height: 55px; opacity: 0.8;" alt="">
-      <img src="/tree-2.png" class="tree" style="right: 10%; bottom: 125px; height: 50px; opacity: 0.75;" alt="">
+    <!-- Grass band at horizon -->
+    <div class="grass-band"></div>
+    <div class="grass-shadow"></div>
 
-      <!-- Front hills (slightly darker) -->
-      <div class="hills-row front-hills">
-        <img src="/grassy-hills.png" alt="">
-        <img src="/grassy-hills.png" alt="">
-      </div>
-
-      <!-- Front trees -->
-      <img src="/tree.png" class="tree" style="left: 20%; bottom: 85px; height: 80px; opacity: 0.95;" alt="">
-      <img src="/tree.png" class="tree" style="right: 18%; bottom: 80px; height: 85px; opacity: 0.9;" alt="">
-
-      <!-- Ground -->
-      <div class="ground"></div>
-      <div class="ground-shadow"></div>
+    <!-- Hills tiled across at horizon -->
+    <div class="hills-strip">
+      <img src="/grassy-hills.png" class="hill" alt="">
+      <img src="/grassy-hills.png" class="hill" alt="">
+      <img src="/grassy-hills.png" class="hill" alt="">
+      <img src="/grassy-hills.png" class="hill" alt="">
     </div>
 
-    <!-- Floating clay pigeons -->
-    <div class="clay clay-1"></div>
-    <div class="clay clay-2"></div>
-    <div class="clay clay-3"></div>
+    <!-- Back trees (smaller, dimmer, positioned wider) -->
+    <img src="/tree-2.png" class="tree back-tree-left" alt="">
+    <img src="/tree-2.png" class="tree back-tree-right" alt="">
 
-    <!-- Shooter at bottom center -->
+    <!-- Front trees (larger, positioned narrower) -->
+    <img src="/tree.png" class="tree front-tree-left" alt="">
+    <img src="/tree.png" class="tree front-tree-right" alt="">
+
+    <!-- Floating clays -->
+    <div class="clay-disc clay-1"></div>
+    <div class="clay-disc clay-2"></div>
+
+    <!-- Shooter -->
     <img src="/shoot-neutral.png" class="shooter" alt="">
 
     <!-- Content -->
@@ -61,147 +55,174 @@
 .game-hero {
   position: relative;
   width: 100%;
-  height: 580px;
+  height: 560px;
   overflow: hidden;
   user-select: none;
 }
 
-/* Sky */
+/* Sky - matches game: rgb(0.53, 0.81, 0.98) = #87cefa */
 .sky {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, #53a8d8 0%, #7ec8f0 40%, #a8d8a8 85%, #5a9e3a 100%);
+  background: #87cefa;
+}
+
+/* Cloud band at 80% height - rgba(0.91, 0.97, 1.0, 0.38) */
+.cloud-band {
+  position: absolute;
+  top: 10%;
+  left: 0; right: 0;
+  height: 28%;
+  background: rgba(232, 247, 255, 0.38);
 }
 
 .sun-glow {
   position: absolute;
-  top: 20px;
+  top: 10%;
   left: 50%;
   transform: translateX(-50%);
-  width: 260px;
-  height: 260px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255,248,214,0.45) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(255,240,156,0.42) 0%, transparent 70%);
 }
 
 .sun {
   position: absolute;
-  top: 60px;
+  top: 14%;
   left: 50%;
   transform: translateX(-50%);
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: rgba(255,246,224,0.85);
-  box-shadow: 0 0 50px rgba(255,240,180,0.5);
+  background: rgba(255,245,194,1);
 }
 
 .cloud {
   position: absolute;
-  background: rgba(255,255,255,0.28);
-  border-radius: 40px;
-  animation: drift 30s linear infinite;
+  background: rgba(255,255,255,0.25);
+  border-radius: 30px;
+  animation: drift 50s linear infinite;
 }
 
-.cloud-1 { top: 50px; left: -10%; width: 200px; height: 50px; animation-duration: 40s; }
-.cloud-2 { top: 110px; left: 60%; width: 150px; height: 40px; animation-duration: 55s; animation-delay: -15s; }
-.cloud-3 { top: 30px; left: 30%; width: 100px; height: 35px; opacity: 0.2; animation-duration: 45s; animation-delay: -8s; }
+.cloud-1 { top: 12%; left: -15%; width: 160px; height: 45px; }
+.cloud-2 { top: 20%; left: -10%; width: 120px; height: 35px; animation-duration: 65s; animation-delay: -20s; opacity: 0.2; }
 
 @keyframes drift {
   from { transform: translateX(0); }
-  to { transform: translateX(120vw); }
+  to { transform: translateX(130vw); }
 }
 
-/* Landscape */
-.landscape {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 280px;
-}
-
-.hills-row {
-  position: absolute;
-  display: flex;
-  bottom: 40px;
-  width: 200%;
-  left: -20%;
-}
-
-.hills-row img {
-  height: 160px;
-  flex-shrink: 0;
-  margin-right: -10%;
-}
-
-.back-hills {
-  bottom: 60px;
-  opacity: 0.7;
-  filter: brightness(0.85);
-}
-
-.front-hills {
-  bottom: 30px;
-  opacity: 0.9;
-}
-
-.front-hills img {
-  height: 140px;
-}
-
-.tree {
-  position: absolute;
-  z-index: 2;
-}
-
+/* Ground - rgb(0.39, 0.56, 0.14) = #638f24 */
 .ground {
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  background: linear-gradient(180deg, #4a8c32 0%, #3a7228 100%);
+  left: 0; right: 0;
+  height: 28%;
+  background: #638f24;
 }
 
-.ground-shadow {
+/* Grass band - rgb(0.47, 0.67, 0.21) = #78ab36 */
+.grass-band {
   position: absolute;
-  bottom: 55px;
-  left: 0;
-  right: 0;
-  height: 15px;
-  background: linear-gradient(180deg, transparent, rgba(48,70,18,0.5));
+  bottom: 28%;
+  left: 0; right: 0;
+  height: 2.5%;
+  background: #78ab36;
+  z-index: 1;
+}
+
+/* Grass shadow - rgb(0.30, 0.45, 0.11) = #4d731c at 0.68 alpha */
+.grass-shadow {
+  position: absolute;
+  bottom: 25%;
+  left: 0; right: 0;
+  height: 3%;
+  background: rgba(77, 115, 28, 0.68);
+  z-index: 1;
+}
+
+/* Hills - tiled across, sitting at horizon with green tint */
+.hills-strip {
+  position: absolute;
+  bottom: 22%;
+  left: -10%;
+  right: -10%;
+  display: flex;
+  z-index: 2;
+}
+
+.hill {
+  height: 140px;
+  flex-shrink: 0;
+  margin-right: -18%;
+  opacity: 0.9;
+  filter: sepia(0.1) saturate(1.2) hue-rotate(-10deg);
+}
+
+/* Back trees - at ±70% of half-hill from center, smaller */
+.tree { position: absolute; z-index: 3; }
+
+.back-tree-left {
+  bottom: 30%;
+  left: 15%;
+  height: 45px;
+  opacity: 0.86;
+}
+
+.back-tree-right {
+  bottom: 31%;
+  right: 15%;
+  height: 42px;
+  opacity: 0.86;
+}
+
+/* Front trees - at ±49% of half-hill from center, larger */
+.front-tree-left {
+  bottom: 26%;
+  left: 26%;
+  height: 65px;
+  opacity: 0.94;
+  z-index: 4;
+}
+
+.front-tree-right {
+  bottom: 25%;
+  right: 24%;
+  height: 68px;
+  opacity: 0.94;
+  z-index: 4;
 }
 
 /* Floating clays */
-.clay {
+.clay-disc {
   position: absolute;
-  width: 40px;
-  height: 16px;
+  width: 36px;
+  height: 14px;
   border-radius: 50%;
   background: linear-gradient(180deg, #f0c590, #d4845a, #a85f3d);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  animation: float 4s ease-in-out infinite;
+  border: 1.5px solid rgba(106,62,31,0.5);
+  z-index: 5;
+  animation: bob 3s ease-in-out infinite;
 }
 
-.clay-1 { top: 160px; left: 12%; animation-delay: 0s; transform: rotate(-10deg); }
-.clay-2 { top: 200px; right: 14%; animation-delay: -1.5s; transform: rotate(8deg); width: 35px; height: 14px; }
-.clay-3 { top: 130px; right: 30%; animation-delay: -3s; transform: rotate(-15deg); width: 30px; height: 12px; opacity: 0.7; }
+.clay-1 { top: 35%; left: 14%; transform: rotate(-12deg); }
+.clay-2 { top: 30%; right: 16%; animation-delay: -1.5s; transform: rotate(8deg); width: 30px; height: 12px; }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0) rotate(-10deg); }
-  50% { transform: translateY(-12px) rotate(-5deg); }
+@keyframes bob {
+  0%, 100% { transform: translateY(0) rotate(-12deg); }
+  50% { transform: translateY(-8px) rotate(-6deg); }
 }
 
 /* Shooter */
 .shooter {
   position: absolute;
-  bottom: 10px;
+  bottom: 2%;
   left: 50%;
   transform: translateX(-50%);
-  height: 110px;
-  z-index: 5;
-  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+  height: 100px;
+  z-index: 6;
+  filter: drop-shadow(0 3px 6px rgba(0,0,0,0.3));
 }
 
 /* Content */
@@ -211,51 +232,52 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 30px;
   text-align: center;
 }
 
 .app-icon {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   border-radius: 22%;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
-  margin-bottom: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  margin-bottom: 10px;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 900;
-  line-height: 0.9;
-  margin: 0 0 12px 0;
-  text-shadow: 3px 3px 0 rgba(0,0,0,0.2), 0 0 20px rgba(0,0,0,0.1);
+  line-height: 0.85;
+  margin: 0 0 10px 0;
+  text-shadow: 2px 3px 0 rgba(0,0,0,0.2);
 }
 
-.clay-text { color: #ffdd9c; letter-spacing: 6px; }
-.rush-text { color: #de7228; letter-spacing: 8px; font-size: 3.5rem; }
+.clay-text { color: #ffdd9c; letter-spacing: 5px; }
+.rush-text { color: #de7228; letter-spacing: 7px; font-size: 3.2rem; }
 
 .tagline {
-  font-size: 1.1rem;
-  color: rgba(255,255,255,0.9);
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  font-size: 1rem;
+  color: rgba(255,255,255,0.92);
+  margin-bottom: 16px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
 }
 
 .store-badge img {
-  height: 46px;
+  height: 44px;
   transition: transform 0.2s;
 }
 
 .store-badge img:hover {
-  transform: scale(1.06);
+  transform: scale(1.05);
 }
 
 @media (max-width: 640px) {
-  .game-hero { height: 480px; }
-  h1 { font-size: 2.2rem; }
-  .rush-text { font-size: 2.6rem; }
-  .app-icon { width: 80px; height: 80px; }
-  .shooter { height: 80px; }
-  .clay { display: none; }
+  .game-hero { height: 460px; }
+  h1 { font-size: 2rem; }
+  .rush-text { font-size: 2.4rem; }
+  .app-icon { width: 70px; height: 70px; }
+  .shooter { height: 75px; }
+  .clay-disc { display: none; }
+  .back-tree-left, .back-tree-right { display: none; }
 }
 </style>
