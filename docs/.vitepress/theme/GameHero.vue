@@ -225,7 +225,7 @@
 /* Shooter */
 .shooter {
   position: absolute;
-  bottom: 2%;
+  bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
   height: 100px;
