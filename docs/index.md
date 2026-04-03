@@ -27,9 +27,12 @@ layout: page
   border-color: #de7228;
 }
 
-.feature-card .icon {
-  font-size: 2.2rem;
-  margin-bottom: 10px;
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  border-radius: 12px;
 }
 
 .feature-card h3 {
@@ -76,22 +79,22 @@ layout: page
 
 <div class="features-section">
   <div class="feature-card">
-    <div class="icon">🎯</div>
+    <img src="/icon-reticle.png" class="feature-icon" alt="">
     <h3>Precision Shooting</h3>
     <p>Hit clay targets with perfect timing. Build combos for bonus gold clays and unlock the elusive bonus duck.</p>
   </div>
   <div class="feature-card">
-    <div class="icon">🏆</div>
+    <img src="/icon-trophy.png" class="feature-icon" alt="">
     <h3>Game Center</h3>
     <p>Compete on leaderboards and unlock 18 achievements across skill, progression, score, and daily challenges.</p>
   </div>
   <div class="feature-card">
-    <div class="icon">📅</div>
+    <img src="/icon-daily.png" class="feature-icon" alt="">
     <h3>Daily Challenges</h3>
     <p>A new challenge every day. Build your streak and prove your dedication.</p>
   </div>
   <div class="feature-card">
-    <div class="icon">🦆</div>
+    <img src="/icon-duck.png" class="feature-icon" alt="">
     <h3>Bonus Duck</h3>
     <p>Destroy every target and a bonus duck flies across — worth thousands of points. Can you hit it?</p>
   </div>
