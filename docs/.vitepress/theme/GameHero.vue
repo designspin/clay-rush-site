@@ -142,23 +142,31 @@
   z-index: 1;
 }
 
-/* Hills - tiled across, sitting at horizon with green tint */
+/* Hills - tiled across full width, sitting at horizon with green tint */
 .hills-strip {
   position: absolute;
   bottom: 22%;
-  left: -10%;
-  right: -10%;
-  display: flex;
+  left: 0;
+  width: 100%;
+  height: 140px;
   z-index: 2;
+  overflow: hidden;
 }
 
 .hill {
-  height: 140px;
-  flex-shrink: 0;
-  margin-right: -18%;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  min-width: 400px;
   opacity: 0.9;
   filter: sepia(0.1) saturate(1.2) hue-rotate(-10deg);
 }
+
+.hill:nth-child(1) { left: -10%; }
+.hill:nth-child(2) { left: 20%; }
+.hill:nth-child(3) { left: 50%; }
+.hill:nth-child(4) { left: 80%; }
 
 /* Back trees - at ±70% of half-hill from center, smaller */
 .tree { position: absolute; z-index: 3; }
