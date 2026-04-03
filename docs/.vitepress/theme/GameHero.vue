@@ -6,8 +6,6 @@
       <div class="sun-outer"></div>
       <div class="sun-glow"></div>
       <div class="sun"></div>
-      <div class="cloud cloud-1"></div>
-      <div class="cloud cloud-2"></div>
     </div>
 
     <!-- Ground (below horizon) -->
@@ -68,13 +66,13 @@
   background: #87cefa;
 }
 
-/* Cloud band at 80% height - rgba(0.91, 0.97, 1.0, 0.38) */
+/* Cloud band matching game: rgba(0.91, 0.97, 1.0, 0.38) */
 .cloud-band {
   position: absolute;
-  top: 10%;
+  top: 8%;
   left: 0; right: 0;
-  height: 28%;
-  background: rgba(232, 247, 255, 0.38);
+  height: 30%;
+  background: rgba(232, 247, 255, 0.35);
 }
 
 .sun-outer {
@@ -111,20 +109,6 @@
   background: rgba(255,245,194,1);
 }
 
-.cloud {
-  position: absolute;
-  background: rgba(255,255,255,0.25);
-  border-radius: 30px;
-  animation: drift 50s linear infinite;
-}
-
-.cloud-1 { top: 12%; left: -15%; width: 160px; height: 45px; }
-.cloud-2 { top: 20%; left: -10%; width: 120px; height: 35px; animation-duration: 65s; animation-delay: -20s; opacity: 0.2; }
-
-@keyframes drift {
-  from { transform: translateX(0); }
-  to { transform: translateX(130vw); }
-}
 
 /* Ground - rgb(0.39, 0.56, 0.14) = #638f24 */
 .ground {
