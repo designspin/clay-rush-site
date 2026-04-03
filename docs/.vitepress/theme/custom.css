@@ -1,0 +1,107 @@
+/* Clay Rush branded theme overrides */
+
+:root {
+  --vp-c-brand-1: #de7228;
+  --vp-c-brand-2: #c4611e;
+  --vp-c-brand-3: #e88940;
+  --vp-c-brand-soft: rgba(222, 114, 40, 0.14);
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg, #ffdd9c 0%, #de7228 100%);
+
+  --vp-home-hero-image-background-image: linear-gradient(135deg, #4aa8e0 30%, #5a9e3a 100%);
+  --vp-home-hero-image-filter: blur(60px) saturate(1.2);
+
+  --vp-c-bg: #0a0504;
+  --vp-c-bg-soft: #1a1008;
+  --vp-c-bg-mute: #241a0e;
+  --vp-c-bg-alt: #0f0906;
+
+  --vp-c-text-1: #fff2dc;
+  --vp-c-text-2: #d4b896;
+  --vp-c-text-3: #a08060;
+
+  --vp-c-divider: #2a1e12;
+  --vp-c-divider-light: #1e1408;
+}
+
+/* Dark mode already matches our palette */
+.dark {
+  --vp-c-bg: #0a0504;
+  --vp-c-bg-soft: #1a1008;
+  --vp-c-bg-mute: #241a0e;
+  --vp-c-bg-alt: #0f0906;
+}
+
+/* Hero section */
+.VPHero .name {
+  font-size: 4rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 4px;
+}
+
+.VPHero .text {
+  color: #ffdd9c !important;
+  font-weight: 700 !important;
+}
+
+.VPHero .tagline {
+  color: #d4b896 !important;
+}
+
+/* Make hero image (app icon) round like iOS */
+.VPHero .VPImage {
+  border-radius: 22% !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5) !important;
+  max-width: 200px !important;
+}
+
+/* Feature cards */
+.VPFeature {
+  background: #1a1008 !important;
+  border-color: #2a1e12 !important;
+}
+
+.VPFeature:hover {
+  border-color: #de7228 !important;
+}
+
+.VPFeature .title {
+  color: #ffdd9c !important;
+}
+
+/* Nav bar */
+.VPNav {
+  background: rgba(10, 5, 4, 0.85) !important;
+  backdrop-filter: blur(12px);
+}
+
+/* Footer */
+.VPFooter {
+  border-color: #1e1408 !important;
+}
+
+/* Buttons */
+.VPButton.brand {
+  background-color: #de7228 !important;
+  border-color: #de7228 !important;
+}
+
+.VPButton.brand:hover {
+  background-color: #c4611e !important;
+  border-color: #c4611e !important;
+}
+
+/* Content pages */
+.vp-doc h1 {
+  color: #ffdd9c;
+}
+
+.vp-doc h2 {
+  color: #e8a050;
+  border-color: #2a1e12;
+}
+
+.vp-doc a {
+  color: #de7228;
+}
