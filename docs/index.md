@@ -28,10 +28,11 @@ layout: page
 }
 
 .feature-icon {
+  display: block;
   width: 64px;
   height: 64px;
   object-fit: contain;
-  margin-bottom: 12px;
+  margin: 0 auto 12px;
   border-radius: 12px;
 }
 
