@@ -3,6 +3,7 @@
     <!-- Sky -->
     <div class="sky">
       <div class="cloud-band"></div>
+      <div class="sun-outer"></div>
       <div class="sun-glow"></div>
       <div class="sun"></div>
       <div class="cloud cloud-1"></div>
@@ -74,6 +75,18 @@
   left: 0; right: 0;
   height: 28%;
   background: rgba(232, 247, 255, 0.38);
+}
+
+.sun-outer {
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(255, 240, 156, 0.42);
+  box-shadow: 0 0 60px rgba(255, 240, 156, 0.3);
 }
 
 .sun-glow {
