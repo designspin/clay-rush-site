@@ -3,7 +3,10 @@ layout: home
 hero:
   name: Clay Rush
   text: Skeet Shooting for iOS
-  tagline: Test your reflexes in this fast-paced arcade shooter inspired by the classic Hyper Sports
+  tagline: Test your reflexes in this fast-paced arcade skeet shooting game
+  image:
+    src: /app-icon.png
+    alt: Clay Rush
   actions:
     - theme: brand
       text: Download on the App Store

@@ -22,7 +22,7 @@ A new challenge is generated every day based on the date. Complete it to build y
 
 **Q: What is the bonus duck?**
 
-If you destroy every single target in an attempt, a bonus duck will fly across the screen after a short delay. It's worth 3,000–6,000 points depending on how many you've hit in the current round. Inspired by the classic arcade game Hyper Sports!
+If you destroy every single target in an attempt, a bonus duck will fly across the screen after a short delay. It's worth 3,000–6,000 points depending on how many you've hit in the current round.
 
 **Q: How do I access the leaderboard?**
 
