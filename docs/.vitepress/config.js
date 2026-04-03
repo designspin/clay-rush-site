@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'Clay Rush',
   description: 'A fast-paced skeet shooting game for iOS',
   base: '/clay-rush-site/',
+  appearance: 'dark',
   head: [
     ['link', { rel: 'icon', href: '/clay-rush-site/app-icon.png' }]
   ],
