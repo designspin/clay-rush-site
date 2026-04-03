@@ -264,7 +264,7 @@ h1 {
   -webkit-text-stroke: 5px #592e0d;
   paint-order: stroke fill;
   text-shadow: 4px -4px 0 rgba(0,0,0,0.5);
-  margin-bottom: 12px;
+  margin-bottom: -4px;
 }
 
 .rush-text {
