@@ -78,22 +78,22 @@
 
 .sun-glow {
   position: absolute;
-  top: 10%;
+  top: 18%;
   left: 50%;
   transform: translateX(-50%);
-  width: 220px;
-  height: 220px;
+  width: 320px;
+  height: 320px;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(255,240,156,0.42) 0%, transparent 70%);
 }
 
 .sun {
   position: absolute;
-  top: 14%;
+  top: 24%;
   left: 50%;
   transform: translateX(-50%);
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background: rgba(255,245,194,1);
 }
