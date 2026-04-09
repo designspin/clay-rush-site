@@ -43,7 +43,7 @@
       <img src="/app-icon.png" class="app-icon" alt="Clay Rush">
       <h1><span class="clay-text">CLAY</span><br><span class="rush-text">RUSH</span></h1>
       <p class="tagline">Fast-paced skeet shooting for iOS</p>
-      <a href="#" class="store-badge">
+      <a href="https://apps.apple.com/app/clay-rush-skeet-shooting/id6761615236" class="store-badge">
         <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
       </a>
     </div>
